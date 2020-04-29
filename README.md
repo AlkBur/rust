@@ -11,6 +11,14 @@ loop {
 }
 ```
 ```rust
+fn print_prime_numbers_upto(n: i32) {
+    println!("Prime numbers lower than {}:", n);
+    for x in (2..n).filter(|&i| is_prime(i)) {
+        println!("{}", x);
+    }
+}
+```
+```rust
 extern crate rand;
 
 use std::io;
