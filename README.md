@@ -1,5 +1,16 @@
 # Rust
 ```rust
+let mut iter = IntoIterator::into_iter(v);
+loop {
+    match iter.next() {
+        Some(x) => {
+            // тело цикла
+        },
+        None => break,
+    }
+}
+```
+```rust
 extern crate rand;
 
 use std::io;
