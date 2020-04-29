@@ -1,5 +1,5 @@
 # Rust
-```
+```rust
 fn create_phone_number(numbers: &[u8]) -> String {
     let s: String = numbers.into_iter().map(|i| i.to_string()).collect();
     
