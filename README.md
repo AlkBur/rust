@@ -24,3 +24,15 @@ impl MorseDecoder {
     
 }
 ```
+```rust
+fn seven(mut n: i64) -> (i64, i32) {   
+    let mut steps = 0;
+    
+    while n >= 100 {
+        n = (n / 10) - (n % 10 * 2);
+        steps += 1;
+    }
+
+    (n, steps)
+}
+```
